@@ -1,3 +1,10 @@
+:root {
+  --white: #f5eaea;
+  --blue-500: #72a6f5;
+  --gray-800: #29292e;
+  --gray-900: #242222;
+}
+
 @media (max-width: 1080px) {
   html {
     font-size: 93.75%;
@@ -14,6 +21,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background: var(--gray-900);
 }
 
 body, input, textarea, select, button {

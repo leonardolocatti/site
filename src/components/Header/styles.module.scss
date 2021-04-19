@@ -1,0 +1,59 @@
+.headerContainer {
+  height: 4.5rem;
+  border-bottom: 1px solid var(--gray-800);
+}
+
+.headerContent {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 4.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 3.75rem;
+  }
+
+  nav {
+    height: 4.5rem;
+
+    a {
+      position: relative;
+      display: inline-block;
+      padding: 0 0.5rem;
+      height: 4.5rem;
+      line-height: 4.5rem;
+      font-size: 1.5rem;
+      color: var(--white);
+
+      transition: color 0.3s;
+
+      &:hover {
+        color: var(--blue-500);
+      }
+
+      &.active {
+        font-weight: 700;
+
+        &::after {
+          content: '';
+          height: 3px;
+          border-radius: 3px 3px 0 0;
+          width: 100%;
+          position: absolute;
+          bottom: 1px;
+          left: 0;
+          background: var(--blue-500);
+        }
+      }
+
+
+      & + a {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
