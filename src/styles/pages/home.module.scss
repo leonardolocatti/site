@@ -17,6 +17,17 @@
   }
 }
 
+@media (max-width: 640px) {
+  .homeContainer {
+    flex-direction: column-reverse;
+    justify-content: center;
+
+    img {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
 .homeContent {
   h1 {
     font-weight: 400;
@@ -50,6 +61,17 @@
     &:hover {
       background: var(--blue-500);
       color: var(--gray-900);
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .homeContent {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      width: 100%;
     }
   }
 }
